@@ -1,0 +1,20 @@
+Module Module1
+Sub Main()
+show()
+Dim a, b As Integer
+Console.WriteLine("Enter Two Numbers")
+a = Console.ReadLine()
+b = Console.ReadLine()
+Add(a, b)
+Console.WriteLine("Addition is = " & Add(a, b))
+Console.ReadLine()
+End Sub
+Public Function show()
+Console.WriteLine("This is Simple Function")
+End Function
+Public Function Add(ByVal i As Integer, ByVal j As Integer)
+Dim sum As Integer
+sum = i + j
+Return sum
+End Function
+End Module
