@@ -1,0 +1,17 @@
+Module Module1
+Sub Main()
+Dim n As Integer
+Console.WriteLine("Enter Number=")
+n = Console.ReadLine()
+Console.WriteLine("Result=")
+Console.WriteLine(Fact(n))
+Console.ReadLine()
+End Sub
+Function Fact(ByVal n As Integer)
+If n = 0 Then
+Fact = 1
+Else
+Fact = n * Fact(n - 1)
+End If
+End Function
+End Module
